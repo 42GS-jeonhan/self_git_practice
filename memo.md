@@ -1,0 +1,1 @@
+- git checkout "filename": vscode의 Discard Changes 기능과 유사. 파일 변경을 없애고 최신 커밋 상태 파일로 되돌림.
