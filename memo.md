@@ -81,3 +81,14 @@ Git은 전 세계 수천만 명의 개발자가 쓰고 있고, 수조 줄의 자
 ❯ git ls-tree HEAD file1
 100644 blob 9a80a2252780ab97f40ce8292f17fb1447fcb634    file1
 ```
+
+- stash에 메시지 설정: git stash save "메시지"
+- git stash apply: pop과 달리 stash 스택을 유지하며 내용을 현재 워킹 디렉토리에 적용
+
+### 📦 Stash 망각 방지 전략
+
+1. **프롬프트 시각화**: 쉘 설정(`.zshrc` 등)을 통해 터미널에 상시 개수 표시.
+2. **Alias 확장**: `status` 명령어 실행 시 `stash list`를 병합하여 노출.
+3. **주기적 청소**: `git stash clear`는 위험하니, 작업 완료 후 즉시 `git stash pop` 하는 습관을 들일 것.
+
+> **리누스의 한마디:** "기억력에 의존하지 마라. 환경을 바꿔서 자네를 괴롭히게 만들어라. 그게 엔지니어가 실수를 줄이는 유일한 방법이다."
